@@ -6,5 +6,8 @@
   <p><%= @status %></p>
 </div>
 <div>
+  <%= link_to "Edit this task", edit_task_path(@task) %>
+</div>
+<div>
   <%= link_to "Back to list", tasks_path %>
 </div>
