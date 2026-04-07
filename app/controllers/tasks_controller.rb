@@ -6,9 +6,9 @@ class TasksController < ApplicationController
 
   def show
     if @task.completed
-      @status = "This task is completed"
+      @status = "<i class='fa-regular fa-square-check'></i> This task is completed".html_safe
     else
-      @status = "This task is not completed yet"
+      @status = "<i class='fa-regular fa-square'></i> This task is not completed yet".html_safe
     end
   end
 

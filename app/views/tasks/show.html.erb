@@ -1,13 +1,16 @@
-<h1><%= @task.title  %></h1>
-<div>
+<div class="container-with-button">
+  <div class="header"><h1><%= @task.title  %></h1></div>
+  <div class="btn btn-primary">
+    <%= link_to "Edit this task ✏️", edit_task_path(@task) %>
+  </div>
+</div>
+<div class="alert alert-secondary ms-3 mb-3" style="width: 90%;">
   <p><%= @task.details %></p>
 </div>
-<div>
+<div class="border-bottom ms-3 mb-3" style="width: 90%;">
   <p><%= @status %></p>
 </div>
-<div>
-  <%= link_to "Edit this task", edit_task_path(@task) %>
-</div>
-<div>
-  <%= link_to "Back to list", tasks_path %>
+
+<div class="ms-3">
+  <%= link_to "⬅ Back to list", tasks_path %>
 </div>

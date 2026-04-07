@@ -8,3 +8,36 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ li, ul {
+  list-style: none;
+  padding-left:4px !important;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.header {
+  padding: 10px;
+}
+
+.container-with-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 60px;
+}
+
+.btn a{
+  color: white !important;
+}
+
+.btn {
+  height: 40px;
+}
+
+#task_list {
+  padding-left: 20px;
+  padding-right: 20px;
+}

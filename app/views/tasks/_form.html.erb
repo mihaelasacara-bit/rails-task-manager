@@ -1,11 +1,11 @@
-  <%= form_with model: task do |f| %>
+  <%= form_with model: task, html: { class: "bootstrap-form" } do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, class: "form-control" %>
   <%= f.label :details %>
-  <%= f.text_field :details %>
+  <%= f.text_field :details, class: "form-control" %>
   <% unless task.new_record?%>
     <%= f.label :completed %>
-    <%= f.checkbox :completed %>
+    <%= f.checkbox :completed, class: "form-check-label" %>
   <% end %>
   <%= f.submit %>
 <% end %>
