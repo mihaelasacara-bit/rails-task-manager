@@ -4,8 +4,9 @@
   <%= f.label :details %>
   <%= f.text_field :details, class: "form-control" %>
   <% unless task.new_record?%>
-    <%= f.label :completed %>
-    <%= f.checkbox :completed, class: "form-check-label" %>
+    <%= f.label :completed, class: "form-check-label" %>
+    <%= f.checkbox :completed %>
+    <br>
   <% end %>
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-primary mt-3" %>
 <% end %>
